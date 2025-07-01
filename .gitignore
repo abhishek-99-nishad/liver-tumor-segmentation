@@ -1,0 +1,17 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.npy
+*.nii
+*.nii.gz
+*.h5
+*.png
+*.jpg
+.DS_Store
+venv/
+preprocessed/
+predictions/
+overlays/
+comparison/
+training_loss.png
+training_metrics.png
