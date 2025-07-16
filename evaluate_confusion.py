@@ -5,7 +5,7 @@ from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_
 from tqdm import tqdm
 
 # Load model
-model = load_model("unet_model_best.h5")  # or 'unet_model_best.h5' if using checkpoint
+model = load_model("unet_model.h5")  # or 'unet_model_best.h5' if using checkpoint
 
 # Preprocessed data directory
 DATA_DIR = "preprocessed"

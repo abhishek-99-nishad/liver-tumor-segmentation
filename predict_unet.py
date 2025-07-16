@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 
 # Load model
-model = load_model("unet_model_best.h5")
+model = load_model("unet_model.h5")
 
 # Choose a sample CT volume (preprocessed)
 sample_ct = "preprocessed/P0006_ct_C2_ct.npy"

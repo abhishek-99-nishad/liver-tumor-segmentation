@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 
 # Load trained model
-model = load_model("unet_model_best.h5")  # Use best model saved during training
+model = load_model("unet_model.h5")  # Use best model saved during training
 
 # Load preprocessed CT volume and corresponding ground truth mask
 ct_path = "preprocessed/P0006_ct_C2_ct.npy"

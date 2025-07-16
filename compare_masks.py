@@ -7,7 +7,7 @@ ct = np.load("preprocessed/P0006_ct_C2_ct.npy")           # shape: (depth, 256, 
 true_mask = np.load("preprocessed/P0006_ct_C2_mask.npy")  # shape: (depth, 256, 256)
 
 # Load trained model
-model = load_model("unet_model_best.h5", compile=False)
+model = load_model("unet_model.h5", compile=False)
 
 # Prepare input
 ct_input = np.expand_dims(ct, -1)  # shape: (depth, 256, 256, 1)
