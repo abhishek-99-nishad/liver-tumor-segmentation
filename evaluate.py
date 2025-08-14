@@ -7,7 +7,7 @@ ct = np.load("preprocessed/P0006_ct_C2_ct.npy")
 true_mask = np.load("preprocessed/P0006_ct_C2_mask.npy")
 
 # Load the model
-model = load_model("segnet_model.h5", compile=False)
+model = load_model("refinenet_model.h5", compile=False)
 
 # Add channel dimension
 ct = np.expand_dims(ct, axis=-1)  # Shape: (depth, 256, 256, 1)

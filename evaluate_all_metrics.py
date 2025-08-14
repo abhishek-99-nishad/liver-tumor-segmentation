@@ -21,7 +21,7 @@ def bce_dice_loss(y_true, y_pred):
     return bce + dice_loss(y_true, y_pred)
 
 # --- Load model ---
-model = load_model("unet_model.h5", custom_objects={"bce_dice_loss": bce_dice_loss, "dice_loss": dice_loss})
+model = load_model("refinenet_model.h5", custom_objects={"bce_dice_loss": bce_dice_loss, "dice_loss": dice_loss})
 
 # --- Prepare data paths ---
 DATA_DIR = "preprocessed"

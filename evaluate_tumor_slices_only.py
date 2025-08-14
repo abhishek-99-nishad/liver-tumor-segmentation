@@ -26,7 +26,7 @@ def update_count(new_count):
     return total_count
 
 # --- Load Model ---
-model = load_model("unet_model.h5", compile=False)
+model = load_model("segnet_model_best.h5", compile=False)
 
 # --- Load Preprocessed Data ---
 DATA_DIR = "preprocessed"
