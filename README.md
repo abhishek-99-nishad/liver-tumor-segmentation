@@ -1,4 +1,4 @@
-# Liver Tumor Segmentation using U-Net
+# Semantic Liver Tumor Segmentation 
 
 This project performs liver tumor segmentation on 3D CT scans using a 2D U-Net model in TensorFlow.
 
