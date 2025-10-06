@@ -1,0 +1,44 @@
+# Ignore virtual environment
+venv/
+
+# Ignore model files
+*.h5
+
+# Ignore WandB logs
+wandb/
+
+# Ignore cache files and pycache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore large image outputs
+*.png
+*.jpg
+*.jpeg
+# 🧠 Python cache and virtual environment
+__pycache__/
+*.pyc
+venv/
+
+# 🧱 Model weights (too large for git)
+*.h5
+
+# 📦 Dataset, preprocessed data, and slices
+preprocessed/
+tumor_slices/
+*.npy
+
+# 🧪 WandB experiment logs
+wandb/
+
+# 🖼️ Generated result images
+*.png
+*.jpg
+*.jpeg
+
+# 🧰 IDE and system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
