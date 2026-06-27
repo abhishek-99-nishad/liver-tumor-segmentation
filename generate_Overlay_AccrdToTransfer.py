@@ -22,7 +22,7 @@ def overlay(ct, gt_mask, pred_mask, idx, output_path, label):
     plt.title("Predicted")
 
     plt.tight_layout()
-    filename = f"{output_path}/{label}_vit_transfer_best_model_{idx}.png"
+    filename = f"{output_path}/{label}_unetplusplus_finetune_best_model_{idx}.png"
     plt.savefig(filename)
     plt.close()
     print(f"✅ Saved: {filename}")
@@ -32,7 +32,7 @@ X_test = np.load("tumor_slices/testing/ct_slices.npy")
 y_test = np.load("tumor_slices/testing/mask_slices.npy")
 
 # Load fine-tuned model
-model = tf.keras.models.load_model("vit_transfer_best_model.h5", compile=False)
+model = tf.keras.models.load_model("unetplusplus_finetune_best_model.h5", compile=False)
 
 # Predict masks
 y_pred = model.predict(X_test, batch_size=8)
@@ -43,7 +43,7 @@ top_5_idx = [130, 144, 202, 460, 595]
 bottom_5_idx = [199, 545, 535, 378, 781]
 
 # Create output directory
-output_path = "vit_transfer_best_model"
+output_path = "unetplusplus_finetune_best_model"
 os.makedirs(output_path, exist_ok=True)
 
 # Generate overlays for top 5

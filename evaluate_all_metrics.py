@@ -9,7 +9,7 @@ X_test = np.load("tumor_slices/testing/ct_slices.npy")
 y_test = np.load("tumor_slices/testing/mask_slices.npy")
 
 # Load trained model
-model = tf.keras.models.load_model("unet_finetune_final_model.h5", compile=False)
+model = tf.keras.models.load_model("unetplusplus_finetune_best_model.h5", compile=False)
 
 # Predict
 y_pred = model.predict(X_test, batch_size=8)
